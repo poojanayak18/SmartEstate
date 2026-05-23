@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SmartEstate</title>
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+
+            🏠 SmartEstate
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+
+                Home
+
+            </a>
+
+            <a href="properties.html">
+
+                Properties
+
+            </a>
+
+            <a href="add-property.html">
+
+                Add Property
+
+            </a>
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Find Your Dream Property
+
+            </h1>
+
+            <p>
+
+                AI Powered Smart Real Estate Platform
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI PRICE PREDICTOR -->
+    <section class="predictor-section">
+
+        <div class="predictor-card">
+
+            <h1>
+
+                🤖 AI Property Price Predictor
+
+            </h1>
+
+            <p>
+
+                Predict property prices intelligently
+                according to location and area
+
+            </p>
+
+
+
+            <!-- LOCATION -->
+            <input
+                type="text"
+                id="predictLocation"
+                placeholder="Enter Location">
+
+
+
+            <!-- AREA -->
+            <input
+                type="number"
+                id="predictArea"
+                placeholder="Enter Area in Sq Ft">
+
+
+
+            <!-- TYPE -->
+            <select id="predictType">
+
+                <option value="purchase">
+
+                    Purchase
+
+                </option>
+
+                <option value="rental">
+
+                    Rental
+
+                </option>
+
+                <option value="lease">
+
+                    Lease
+
+                </option>
+
+            </select>
+
+
+
+            <!-- BUTTON -->
+            <button
+                onclick="predictPrice()">
+
+                🚀 Predict Price
+
+            </button>
+
+
+
+            <!-- RESULT -->
+            <h2 id="predictionResult">
+
+            </h2>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PURCHASE -->
+    <section class="property-section">
+
+        <h1 class="section-title">
+
+            🏠 Purchase Properties
+
+        </h1>
+
+        <div
+            id="purchase-list"
+            class="property-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RENTAL -->
+    <section class="property-section">
+
+        <h1 class="section-title">
+
+            🏡 Rental Properties
+
+        </h1>
+
+        <div
+            id="rental-list"
+            class="property-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LEASE -->
+    <section class="property-section">
+
+        <h1 class="section-title">
+
+            🌍 Lease Properties
+
+        </h1>
+
+        <div
+            id="lease-list"
+            class="property-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        loadProperties();
+
+    </script>
+
+</body>
+
+</html>

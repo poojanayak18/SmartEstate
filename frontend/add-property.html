@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Add Property</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="add-body">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            🏠 SmartEstate
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ADD PROPERTY SECTION -->
+    <section class="add-property-section">
+
+        <div class="add-property-container">
+
+            <h1>🏡 Add New Property</h1>
+
+            <p>
+                List your property with SmartEstate
+            </p>
+
+
+            <!-- GRID -->
+            <div class="property-form-grid">
+
+                <!-- TITLE -->
+                <div class="form-group">
+
+                    <label>
+                        Property Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Luxury Villa">
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="form-group">
+
+                    <label>
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Bangalore">
+
+                </div>
+
+
+                <!-- PRICE PER SQFT -->
+                <div class="form-group">
+
+                    <label>
+                        Price Per Sq Ft
+                    </label>
+
+                    <input
+                        type="number"
+                        id="pricePerSqFt"
+                        placeholder="6000">
+
+                </div>
+
+
+                <!-- TOTAL PRICE -->
+                <div class="form-group">
+
+                    <label>
+                        Total Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="totalPrice"
+                        placeholder="12000000">
+
+                </div>
+
+
+                <!-- TYPE -->
+                <div class="form-group">
+
+                    <label>
+                        Property Type
+                    </label>
+
+                    <select id="type">
+
+                        <option value="purchase">
+                            Purchase
+                        </option>
+
+                        <option value="rental">
+                            Rental
+                        </option>
+
+                        <option value="lease">
+                            Lease
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- IMAGE -->
+                <div class="form-group">
+
+                    <label>
+                        Property Image URL
+                    </label>
+
+                    <input
+                        type="text"
+                        id="image"
+                        placeholder="Paste image URL">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AMENITIES -->
+            <div class="form-group full-width">
+
+                <label>
+                    Amenities
+                </label>
+
+                <input
+                    type="text"
+                    id="amenities"
+                    placeholder="Pool, Gym, Parking, WiFi">
+
+            </div>
+
+
+
+            <!-- NEARBY -->
+            <div class="form-group full-width">
+
+                <label>
+                    Nearby Places
+                </label>
+
+                <input
+                    type="text"
+                    id="nearbyPlaces"
+                    placeholder="Hospital, School, Metro, Mall">
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+            <button
+                class="add-property-btn"
+                onclick="addProperty()">
+
+                🚀 Add Property
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
